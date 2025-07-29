@@ -18,5 +18,7 @@ void testTshirtSize() {
     assert(size(37) == 'S');
     assert(size(40) == 'M');
     assert(size(43) == 'L');
+    assert(size(38) == 'S');  // It will fail since their is no size mentioned for  if cmd == 38
+    assert(size(42) == 'M');  // It will fail since their is no size mentioned for  if cmd == 38
     std::cout << "All is well (maybe!)\n";
 }
